@@ -14,8 +14,8 @@
 		30859A20207F3D770052F884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30859A1E207F3D770052F884 /* LaunchScreen.storyboard */; };
 		30859A23207F3D770052F884 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30859A22207F3D770052F884 /* main.m */; };
 		30859A2A207F3F510052F884 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30859A29207F3F510052F884 /* GoogleService-Info.plist */; };
-		30859A32207F413D0052F884 /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30859A30207F413D0052F884 /* APIWrapper.m */; };
 		30859A39207F5C700052F884 /* YCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 30859A38207F5C700052F884 /* YCSingleton.m */; };
+		308B920D207F9F3200BA2861 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B920B207F9F3200BA2861 /* Reachability.m */; };
 		30F27034207F61F7007394EB /* YCIntroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F27033207F61F7007394EB /* YCIntroModel.m */; };
 		30F27040207F65AE007394EB /* NSString+YCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F2703F207F65AE007394EB /* NSString+YCString.m */; };
 		BA147A4CAE485E25EC1DD6D8 /* libPods-YogaChromium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C2D6B66844ACCFD12A5FC4 /* libPods-YogaChromium.a */; };
@@ -34,11 +34,11 @@
 		30859A21207F3D770052F884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30859A22207F3D770052F884 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30859A29207F3F510052F884 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		30859A2F207F413D0052F884 /* APIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIWrapper.h; sourceTree = "<group>"; };
-		30859A30207F413D0052F884 /* APIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
 		30859A33207F42010052F884 /* YogaChromium.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaChromium.pch; sourceTree = "<group>"; };
 		30859A37207F5C700052F884 /* YCSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSingleton.h; sourceTree = "<group>"; };
 		30859A38207F5C700052F884 /* YCSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSingleton.m; sourceTree = "<group>"; };
+		308B920B207F9F3200BA2861 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		308B920C207F9F3200BA2861 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		30F27032207F61F7007394EB /* YCIntroModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCIntroModel.h; sourceTree = "<group>"; };
 		30F27033207F61F7007394EB /* YCIntroModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCIntroModel.m; sourceTree = "<group>"; };
 		30F2703E207F65AE007394EB /* NSString+YCString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YCString.h"; sourceTree = "<group>"; };
@@ -89,10 +89,10 @@
 		30859A12207F3D760052F884 /* YogaChromium */ = {
 			isa = PBXGroup;
 			children = (
+				308B920A207F830300BA2861 /* YCCustomViews */,
 				30859A2E207F413D0052F884 /* APIWrapperClass */,
 				30859A2C207F413D0052F884 /* YCCategories */,
 				30859A31207F413D0052F884 /* YCClasses */,
-				30859A2D207F413D0052F884 /* YCCustomViews */,
 				30859A2B207F413D0052F884 /* YCSupportFiles */,
 				30859A13207F3D760052F884 /* AppDelegate.h */,
 				30859A14207F3D760052F884 /* AppDelegate.m */,
@@ -125,18 +125,11 @@
 			path = YCCategories;
 			sourceTree = "<group>";
 		};
-		30859A2D207F413D0052F884 /* YCCustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = YCCustomViews;
-			sourceTree = "<group>";
-		};
 		30859A2E207F413D0052F884 /* APIWrapperClass */ = {
 			isa = PBXGroup;
 			children = (
-				30859A2F207F413D0052F884 /* APIWrapper.h */,
-				30859A30207F413D0052F884 /* APIWrapper.m */,
+				308B920C207F9F3200BA2861 /* Reachability.h */,
+				308B920B207F9F3200BA2861 /* Reachability.m */,
 			);
 			path = APIWrapperClass;
 			sourceTree = "<group>";
@@ -156,6 +149,13 @@
 				30859A38207F5C700052F884 /* YCSingleton.m */,
 			);
 			path = YCSingleton;
+			sourceTree = "<group>";
+		};
+		308B920A207F830300BA2861 /* YCCustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YCCustomViews;
 			sourceTree = "<group>";
 		};
 		30F27031207F61B7007394EB /* Models */ = {
@@ -305,8 +305,8 @@
 				30859A39207F5C700052F884 /* YCSingleton.m in Sources */,
 				30859A18207F3D770052F884 /* ViewController.m in Sources */,
 				30F27034207F61F7007394EB /* YCIntroModel.m in Sources */,
+				308B920D207F9F3200BA2861 /* Reachability.m in Sources */,
 				30859A23207F3D770052F884 /* main.m in Sources */,
-				30859A32207F413D0052F884 /* APIWrapper.m in Sources */,
 				30F27040207F65AE007394EB /* NSString+YCString.m in Sources */,
 				30859A15207F3D760052F884 /* AppDelegate.m in Sources */,
 			);

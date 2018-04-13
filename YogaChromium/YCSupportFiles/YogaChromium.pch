@@ -10,18 +10,17 @@
 #define YogaChromium_pch
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "APIWrapper.h"
 #import "NSString+YCString.h"
 #import "YCSingleton.h"
 
 /* Firbase paths */
-#define sourceURL "https://console.firebase.google.com/project/yogachromium-14a83/database/yogachromium-14a83/data/"
-#define ycID "yogachromium-14a83"
-#define parent "screens/"
-#define intro_path parent@"intro"
-#define main_path parent@"main"
-#define other_path parent@"other"
-#define sidebar_path parent@"sidebar"
+#define sourceURL @"https://console.firebase.google.com/project/yogachromium-14a83/database/yogachromium-14a83/data/"
+#define ycID @"yogachromium-14a83"
+#define parent @"screens"
+#define intro_path @"intro"
+#define main_path @"main"
+#define other_path @"other"
+#define sidebar_path @"sidebar"
 
 
 

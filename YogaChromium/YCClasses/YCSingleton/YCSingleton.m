@@ -7,6 +7,7 @@
 //
 
 #import "YCSingleton.h"
+#import "Reachability.h"
 
 @implementation YCSingleton
 + (id)sharedInstance
@@ -21,11 +22,11 @@
 -(id)init
 {
     /* Write all initialzed values */
-    self.fireDatabaseRef = [[FIRDatabase database] referenceWithPath:@"screens"];
+    self.fireDatabaseRef = [[FIRDatabase database] referenceWithPath:parent];
     return self;
 }
 
--(void)getDataForChild:(NSString *)childName withObserver:(FIRDataEventType)eventType completionBlock:(void(^)(NSDictionary *responseObject))success failure:(void(^)(NSError *error))failure
+-(void)getDataFromChild:(NSString *)childName withObserver:(FIRDataEventType)eventType completionBlock:(void(^)(NSDictionary *responseObject))success failure:(void(^)(NSError *error))failure
 {
     [[self.fireDatabaseRef child:childName] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot){
         if (snapshot.hasChildren) {
@@ -42,6 +43,17 @@
 }
 -(void)removerAllObservers {
     [self.fireDatabaseRef removeAllObservers];
+}
+- (BOOL)isInternetConnectionAvailable
+{
+    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus netWorkStatus = [reachability currentReachabilityStatus] ;
+    if (netWorkStatus == ReachableViaWWAN || netWorkStatus == ReachableViaWiFi) {
+        return YES;
+    } else {
+        return NO;
+    }
+    return NO;
 }
 
 @end

@@ -17,7 +17,7 @@
     self.urlString = @"";
     return self;
 }
--(instancetype)init:(NSDictionary *)introData{
+-(instancetype)initWithIntroData:(NSDictionary *)introData{
     if ([introData isKindOfClass:[NSDictionary class]]) {
         self.contentString = [NSString getStringWithoutNull:[introData valueForKey:@"content"]];
         self.dataPathString = [NSString getStringWithoutNull:[introData valueForKey:@"data_path"]];

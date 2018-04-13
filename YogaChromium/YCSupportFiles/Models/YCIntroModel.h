@@ -16,4 +16,6 @@
 @property(nonatomic, strong) NSString * headingString;
 @property(nonatomic, strong) NSString * typeString;
 @property(nonatomic, strong) NSString * urlString;
+-(instancetype)initWithIntroData:(NSDictionary *)introData;
+-(instancetype)init;
 @end
