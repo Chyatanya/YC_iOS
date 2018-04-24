@@ -11,6 +11,6 @@
 @interface ViewController : UIViewController {
     
 }
-@property (nonatomic, strong) NSMutableArray* introductionArray;
+-(IBAction)clickToStart:(id)sender;
 @end
 

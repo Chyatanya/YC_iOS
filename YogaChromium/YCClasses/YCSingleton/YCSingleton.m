@@ -30,8 +30,17 @@
 {
     [[self.fireDatabaseRef child:childName] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot){
         if (snapshot.hasChildren) {
-            NSDictionary *responseDict = snapshot.value;
-            success(responseDict);
+            id child = snapshot.value;
+            if ([[child class] isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *responseDict = child;
+                success(responseDict);
+                return;
+            } else if ([snapshot.value isKindOfClass:[NSArray class]]) {
+                NSDictionary * res = [NSDictionary dictionaryWithObjectsAndKeys:child,@"response" ,nil];
+                success(res);
+                return;
+            }
+            success(child);
         } else {
             NSError *error = [NSError errorWithDomain:@"some_domain"
                                                code:100
@@ -41,7 +50,7 @@
         }
     }];
 }
--(void)removerAllObservers {
+-(void)removeFireBaseObservers {
     [self.fireDatabaseRef removeAllObservers];
 }
 - (BOOL)isInternetConnectionAvailable

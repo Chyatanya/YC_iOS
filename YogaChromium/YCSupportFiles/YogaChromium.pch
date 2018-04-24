@@ -8,10 +8,14 @@
 
 #ifndef YogaChromium_pch
 #define YogaChromium_pch
-#import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
 #import "NSString+YCString.h"
 #import "YCSingleton.h"
+#import <LGSideMenuController/LGSideMenuController.h>
+#import <LGSideMenuController/UIViewController+LGSideMenuController.h>
+
+
 
 /* Firbase paths */
 #define sourceURL @"https://console.firebase.google.com/project/yogachromium-14a83/database/yogachromium-14a83/data/"
@@ -21,7 +25,6 @@
 #define main_path @"main"
 #define other_path @"other"
 #define sidebar_path @"sidebar"
-
 
 
 /* Font Syles & Sizes */
@@ -47,6 +50,9 @@
 
 #define alertTitle @"Yoga Chromium!"
 
+//Button
+typedef void (^YCButtonViewTargetCompletionHandler)(UIButton* button);
+
 /* Device types */
 
 #define IS_IPHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
@@ -68,6 +74,9 @@
 
 /* Colors */
 #define COLOR_WHITE [UIColor whiteColor]
-#define COLOR_SPECIFIC [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]
+#define COLOR_THEME [UIColor colorWithRed:133.0/255.0 green:193.0/255.0 blue:92.0/255.0 alpha:1.0]
+#define COLOR_SPECIFIC [UIColor colorWithRed:219.0/255.0 green:237.0/255.0 blue:203.0/255.0 alpha:1.0]
+#define COLOR_TEXT [UIColor colorWithRed:97.0/255.0 green:97.0/255.0 blue:97.0/255.0 alpha:1.0]
+#define COLOR_MIXED_WHITE [UIColor colorWithRed:242.0/255.0 green:251.0/255.0 blue:226.0/255.0 alpha:1.0]
 
 #endif /* YogaChromium_pch */

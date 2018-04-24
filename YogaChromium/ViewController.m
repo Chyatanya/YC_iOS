@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "YCIntroModel.h"
 @interface ViewController ()
 
 @end
@@ -16,31 +15,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.introductionArray = [[NSMutableArray alloc]initWithCapacity:0];
-    ViewController* __weak weakSelf = self;
-    if (![[YCSingleton sharedInstance] isInternetConnectionAvailable]) {
-        return;
-    }
-    [[YCSingleton sharedInstance] getDataFromChild:intro_path withObserver:FIRDataEventTypeValue completionBlock:^(NSDictionary *responseObject) {
-        [weakSelf loadIntroValues:responseObject];
-        NSLog(@"%@",responseObject);
-    } failure:^(NSError *error) {
-        NSLog(@"fail");
-    }];
+   
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void)loadIntroValues:(NSDictionary *)introDictionary {
-    for (NSDictionary * introObj in [introDictionary valueForKey:@"data"]) {
-        YCIntroModel * model = [[YCIntroModel alloc] initWithIntroData:introObj];
-        [self.introductionArray addObject:model];
-    }
-    NSLog(@"%@",self.introductionArray);
-}
 
+-(IBAction)clickToStart:(id)sender {
+    [self performSegueWithIdentifier:@"Intro" sender:sender];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ 
+}
 
 @end

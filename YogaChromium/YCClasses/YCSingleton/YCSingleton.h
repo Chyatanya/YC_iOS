@@ -15,6 +15,6 @@
 @property(nonatomic, strong)FIRDatabaseReference* fireDatabaseRef;
 + (id)sharedInstance;
 -(void)getDataFromChild:(NSString *)childName withObserver:(FIRDataEventType)eventType completionBlock:(void(^)(NSDictionary *responseObject))success failure:(void(^)(NSError *error))failure;
--(void)removerAllObservers;
+-(void)removeFireBaseObservers;
 - (BOOL)isInternetConnectionAvailable;
 @end

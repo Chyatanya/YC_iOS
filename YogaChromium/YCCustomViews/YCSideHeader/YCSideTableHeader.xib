@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YCSideTableHeader">
+            <connections>
+                <outlet property="gradientView" destination="OuT-ns-uv7" id="Iil-YD-lBj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuT-ns-uv7" customClass="YCGradientView">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KT4-MZ-Sy9">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="65"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="administrator" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-6o-0OT">
+                                    <rect key="frame" x="20" y="10" width="50" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="NdH-6o-0OT" secondAttribute="height" multiplier="1:1" id="7Fk-bt-HPH"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="NdH-6o-0OT" firstAttribute="width" secondItem="KT4-MZ-Sy9" secondAttribute="width" multiplier="0.2" id="R2n-zd-49d"/>
+                                <constraint firstItem="NdH-6o-0OT" firstAttribute="leading" secondItem="KT4-MZ-Sy9" secondAttribute="leading" constant="20" id="WHG-vY-cMu"/>
+                                <constraint firstItem="NdH-6o-0OT" firstAttribute="top" secondItem="KT4-MZ-Sy9" secondAttribute="top" constant="10" id="dwm-O1-Vmw"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzh-tM-uHe">
+                            <rect key="frame" x="20" y="65" width="230" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">By
+ChyatanyaKumar Reddy</string>
+                                    <attributes>
+                                        <font key="NSFont" size="12" name="HelveticaNeue-MediumItalic"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <tabStops>
+                                                <textTab alignment="left" location="28">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="56">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="84">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="112">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="140">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="168">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="196">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="224">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="252">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="280">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="308">
+                                                    <options/>
+                                                </textTab>
+                                                <textTab alignment="left" location="336">
+                                                    <options/>
+                                                </textTab>
+                                            </tabStops>
+                                        </paragraphStyle>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <color key="highlightedColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lzh-tM-uHe" firstAttribute="top" secondItem="KT4-MZ-Sy9" secondAttribute="bottom" id="DNJ-G0-Pjq"/>
+                        <constraint firstAttribute="trailing" secondItem="lzh-tM-uHe" secondAttribute="trailing" id="L4R-AC-dqa"/>
+                        <constraint firstItem="KT4-MZ-Sy9" firstAttribute="leading" secondItem="OuT-ns-uv7" secondAttribute="leading" id="Nl0-az-98F"/>
+                        <constraint firstItem="KT4-MZ-Sy9" firstAttribute="top" secondItem="OuT-ns-uv7" secondAttribute="top" id="Rlh-8E-UjN"/>
+                        <constraint firstAttribute="bottom" secondItem="lzh-tM-uHe" secondAttribute="bottom" id="YVP-Pv-1E9"/>
+                        <constraint firstItem="KT4-MZ-Sy9" firstAttribute="height" secondItem="OuT-ns-uv7" secondAttribute="height" multiplier="0.65" id="fgE-o7-wTe"/>
+                        <constraint firstAttribute="trailing" secondItem="KT4-MZ-Sy9" secondAttribute="trailing" id="jvp-6f-NoL"/>
+                        <constraint firstItem="lzh-tM-uHe" firstAttribute="leading" secondItem="OuT-ns-uv7" secondAttribute="leading" constant="20" id="xwS-Xb-r39"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OuT-ns-uv7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="04g-ZN-cll"/>
+                <constraint firstItem="OuT-ns-uv7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0IX-Dp-Vga"/>
+                <constraint firstAttribute="bottom" secondItem="OuT-ns-uv7" secondAttribute="bottom" id="UgD-zp-LQt"/>
+                <constraint firstItem="OuT-ns-uv7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ymI-2d-399"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-250" y="-279"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="administrator" width="65" height="65"/>
+    </resources>
+</document>

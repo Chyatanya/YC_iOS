@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304908D0208EFB3C0044D105 /* YCScreensStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304908CF208EFB3C0044D105 /* YCScreensStoryboard.storyboard */; };
+		304908D4208EFC330044D105 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908D3208EFC330044D105 /* BaseViewController.m */; };
+		304908D7208EFC9D0044D105 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908D6208EFC9D0044D105 /* NavigationViewController.m */; };
+		304908DD208F04530044D105 /* LeftSlideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908DC208F04530044D105 /* LeftSlideTableViewController.m */; };
+		304908E1208F053B0044D105 /* YCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908E0208F053B0044D105 /* YCMainViewController.m */; };
+		304908E3208F07500044D105 /* YCMediaAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304908E2208F07500044D105 /* YCMediaAssets.xcassets */; };
+		304908E6208F42A50044D105 /* YCSideListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908E5208F42A50044D105 /* YCSideListModel.m */; };
+		304908EB208F4A0D0044D105 /* YCButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908E9208F4A0D0044D105 /* YCButtonView.m */; };
+		304908EC208F4A0D0044D105 /* YCButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304908EA208F4A0D0044D105 /* YCButtonView.xib */; };
+		304908F0208F4A900044D105 /* YCSideTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908EF208F4A900044D105 /* YCSideTableHeader.m */; };
+		304908F2208F4A9F0044D105 /* YCSideTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304908F1208F4A9F0044D105 /* YCSideTableHeader.xib */; };
+		304908F6208F4BD40044D105 /* YCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908F5208F4BD40044D105 /* YCGradientView.m */; };
 		30859A15207F3D760052F884 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30859A14207F3D760052F884 /* AppDelegate.m */; };
 		30859A18207F3D770052F884 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30859A17207F3D770052F884 /* ViewController.m */; };
 		30859A1B207F3D770052F884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30859A19207F3D770052F884 /* Main.storyboard */; };
@@ -16,13 +28,36 @@
 		30859A2A207F3F510052F884 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30859A29207F3F510052F884 /* GoogleService-Info.plist */; };
 		30859A39207F5C700052F884 /* YCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 30859A38207F5C700052F884 /* YCSingleton.m */; };
 		308B920D207F9F3200BA2861 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B920B207F9F3200BA2861 /* Reachability.m */; };
+		308B92612080996400BA2861 /* YCIntroCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B925F2080996400BA2861 /* YCIntroCollectionViewCell.m */; };
+		308B92622080996400BA2861 /* YCIntroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308B92602080996400BA2861 /* YCIntroCollectionViewCell.xib */; };
+		308B92662080AED800BA2861 /* YCIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B92652080AED800BA2861 /* YCIntroViewController.m */; };
 		30F27034207F61F7007394EB /* YCIntroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F27033207F61F7007394EB /* YCIntroModel.m */; };
 		30F27040207F65AE007394EB /* NSString+YCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F2703F207F65AE007394EB /* NSString+YCString.m */; };
-		BA147A4CAE485E25EC1DD6D8 /* libPods-YogaChromium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C2D6B66844ACCFD12A5FC4 /* libPods-YogaChromium.a */; };
+		8ACAD603FEB4B92070C66EC9 /* Pods_YogaChromium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A2AB1B2FAD0AE5ECB87B5 /* Pods_YogaChromium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19C2D6B66844ACCFD12A5FC4 /* libPods-YogaChromium.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YogaChromium.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5A2AB1B2FAD0AE5ECB87B5 /* Pods_YogaChromium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaChromium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		304908CF208EFB3C0044D105 /* YCScreensStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YCScreensStoryboard.storyboard; sourceTree = "<group>"; };
+		304908D2208EFC330044D105 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		304908D3208EFC330044D105 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		304908D5208EFC9D0044D105 /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		304908D6208EFC9D0044D105 /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		304908DB208F04530044D105 /* LeftSlideTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSlideTableViewController.h; sourceTree = "<group>"; };
+		304908DC208F04530044D105 /* LeftSlideTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSlideTableViewController.m; sourceTree = "<group>"; };
+		304908DF208F053B0044D105 /* YCMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainViewController.h; sourceTree = "<group>"; };
+		304908E0208F053B0044D105 /* YCMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainViewController.m; sourceTree = "<group>"; };
+		304908E2208F07500044D105 /* YCMediaAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YCMediaAssets.xcassets; sourceTree = "<group>"; };
+		304908E4208F42A50044D105 /* YCSideListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSideListModel.h; sourceTree = "<group>"; };
+		304908E5208F42A50044D105 /* YCSideListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSideListModel.m; sourceTree = "<group>"; };
+		304908E8208F4A0D0044D105 /* YCButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCButtonView.h; sourceTree = "<group>"; };
+		304908E9208F4A0D0044D105 /* YCButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCButtonView.m; sourceTree = "<group>"; };
+		304908EA208F4A0D0044D105 /* YCButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCButtonView.xib; sourceTree = "<group>"; };
+		304908EE208F4A900044D105 /* YCSideTableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSideTableHeader.h; sourceTree = "<group>"; };
+		304908EF208F4A900044D105 /* YCSideTableHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSideTableHeader.m; sourceTree = "<group>"; };
+		304908F1208F4A9F0044D105 /* YCSideTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCSideTableHeader.xib; sourceTree = "<group>"; };
+		304908F4208F4BD40044D105 /* YCGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCGradientView.h; sourceTree = "<group>"; };
+		304908F5208F4BD40044D105 /* YCGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCGradientView.m; sourceTree = "<group>"; };
 		30859A10207F3D760052F884 /* YogaChromium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaChromium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30859A13207F3D760052F884 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30859A14207F3D760052F884 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +74,11 @@
 		30859A38207F5C700052F884 /* YCSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSingleton.m; sourceTree = "<group>"; };
 		308B920B207F9F3200BA2861 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		308B920C207F9F3200BA2861 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		308B925E2080996400BA2861 /* YCIntroCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCIntroCollectionViewCell.h; sourceTree = "<group>"; };
+		308B925F2080996400BA2861 /* YCIntroCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCIntroCollectionViewCell.m; sourceTree = "<group>"; };
+		308B92602080996400BA2861 /* YCIntroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCIntroCollectionViewCell.xib; sourceTree = "<group>"; };
+		308B92642080AED800BA2861 /* YCIntroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCIntroViewController.h; sourceTree = "<group>"; };
+		308B92652080AED800BA2861 /* YCIntroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCIntroViewController.m; sourceTree = "<group>"; };
 		30F27032207F61F7007394EB /* YCIntroModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCIntroModel.h; sourceTree = "<group>"; };
 		30F27033207F61F7007394EB /* YCIntroModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCIntroModel.m; sourceTree = "<group>"; };
 		30F2703E207F65AE007394EB /* NSString+YCString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YCString.h"; sourceTree = "<group>"; };
@@ -52,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA147A4CAE485E25EC1DD6D8 /* libPods-YogaChromium.a in Frameworks */,
+				8ACAD603FEB4B92070C66EC9 /* Pods_YogaChromium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +102,68 @@
 		1237C131757DCE105DADCC37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				19C2D6B66844ACCFD12A5FC4 /* libPods-YogaChromium.a */,
+				2F5A2AB1B2FAD0AE5ECB87B5 /* Pods_YogaChromium.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		304908CE208EFACF0044D105 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				304908CF208EFB3C0044D105 /* YCScreensStoryboard.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		304908D1208EFB730044D105 /* YCSidebar */ = {
+			isa = PBXGroup;
+			children = (
+				304908D2208EFC330044D105 /* BaseViewController.h */,
+				304908D3208EFC330044D105 /* BaseViewController.m */,
+				304908D5208EFC9D0044D105 /* NavigationViewController.h */,
+				304908D6208EFC9D0044D105 /* NavigationViewController.m */,
+				304908DB208F04530044D105 /* LeftSlideTableViewController.h */,
+				304908DC208F04530044D105 /* LeftSlideTableViewController.m */,
+			);
+			path = YCSidebar;
+			sourceTree = "<group>";
+		};
+		304908DE208F05250044D105 /* YCMain */ = {
+			isa = PBXGroup;
+			children = (
+				304908DF208F053B0044D105 /* YCMainViewController.h */,
+				304908E0208F053B0044D105 /* YCMainViewController.m */,
+			);
+			path = YCMain;
+			sourceTree = "<group>";
+		};
+		304908E7208F4A0D0044D105 /* YCButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				304908E8208F4A0D0044D105 /* YCButtonView.h */,
+				304908E9208F4A0D0044D105 /* YCButtonView.m */,
+				304908EA208F4A0D0044D105 /* YCButtonView.xib */,
+			);
+			path = YCButtonView;
+			sourceTree = "<group>";
+		};
+		304908ED208F4A510044D105 /* YCSideHeader */ = {
+			isa = PBXGroup;
+			children = (
+				304908EE208F4A900044D105 /* YCSideTableHeader.h */,
+				304908EF208F4A900044D105 /* YCSideTableHeader.m */,
+				304908F1208F4A9F0044D105 /* YCSideTableHeader.xib */,
+			);
+			path = YCSideHeader;
+			sourceTree = "<group>";
+		};
+		304908F3208F4BBE0044D105 /* YCGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				304908F4208F4BD40044D105 /* YCGradientView.h */,
+				304908F5208F4BD40044D105 /* YCGradientView.m */,
+			);
+			path = YCGradientView;
 			sourceTree = "<group>";
 		};
 		30859A07207F3D760052F884 = {
@@ -89,6 +188,7 @@
 		30859A12207F3D760052F884 /* YogaChromium */ = {
 			isa = PBXGroup;
 			children = (
+				304908CE208EFACF0044D105 /* StoryBoards */,
 				308B920A207F830300BA2861 /* YCCustomViews */,
 				30859A2E207F413D0052F884 /* APIWrapperClass */,
 				30859A2C207F413D0052F884 /* YCCategories */,
@@ -112,6 +212,7 @@
 			children = (
 				30F27031207F61B7007394EB /* Models */,
 				30859A33207F42010052F884 /* YogaChromium.pch */,
+				304908E2208F07500044D105 /* YCMediaAssets.xcassets */,
 			);
 			path = YCSupportFiles;
 			sourceTree = "<group>";
@@ -137,6 +238,9 @@
 		30859A31207F413D0052F884 /* YCClasses */ = {
 			isa = PBXGroup;
 			children = (
+				304908DE208F05250044D105 /* YCMain */,
+				304908D1208EFB730044D105 /* YCSidebar */,
+				308B92632080AEBE00BA2861 /* YCIntroClasses */,
 				30859A34207F5C2D0052F884 /* YCSingleton */,
 			);
 			path = YCClasses;
@@ -154,8 +258,31 @@
 		308B920A207F830300BA2861 /* YCCustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				304908F3208F4BBE0044D105 /* YCGradientView */,
+				304908ED208F4A510044D105 /* YCSideHeader */,
+				304908E7208F4A0D0044D105 /* YCButtonView */,
+				308B925D2080990D00BA2861 /* CustomCell */,
 			);
 			path = YCCustomViews;
+			sourceTree = "<group>";
+		};
+		308B925D2080990D00BA2861 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				308B925E2080996400BA2861 /* YCIntroCollectionViewCell.h */,
+				308B925F2080996400BA2861 /* YCIntroCollectionViewCell.m */,
+				308B92602080996400BA2861 /* YCIntroCollectionViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		308B92632080AEBE00BA2861 /* YCIntroClasses */ = {
+			isa = PBXGroup;
+			children = (
+				308B92642080AED800BA2861 /* YCIntroViewController.h */,
+				308B92652080AED800BA2861 /* YCIntroViewController.m */,
+			);
+			path = YCIntroClasses;
 			sourceTree = "<group>";
 		};
 		30F27031207F61B7007394EB /* Models */ = {
@@ -163,6 +290,8 @@
 			children = (
 				30F27032207F61F7007394EB /* YCIntroModel.h */,
 				30F27033207F61F7007394EB /* YCIntroModel.m */,
+				304908E4208F42A50044D105 /* YCSideListModel.h */,
+				304908E5208F42A50044D105 /* YCSideListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,7 +339,7 @@
 				TargetAttributes = {
 					30859A0F207F3D760052F884 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -237,9 +366,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304908E3208F07500044D105 /* YCMediaAssets.xcassets in Resources */,
 				30859A2A207F3F510052F884 /* GoogleService-Info.plist in Resources */,
 				30859A20207F3D770052F884 /* LaunchScreen.storyboard in Resources */,
 				30859A1D207F3D770052F884 /* Assets.xcassets in Resources */,
+				304908EC208F4A0D0044D105 /* YCButtonView.xib in Resources */,
+				308B92622080996400BA2861 /* YCIntroCollectionViewCell.xib in Resources */,
+				304908D0208EFB3C0044D105 /* YCScreensStoryboard.storyboard in Resources */,
+				304908F2208F4A9F0044D105 /* YCSideTableHeader.xib in Resources */,
 				30859A1B207F3D770052F884 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +405,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YogaChromium/Pods-YogaChromium-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,11 +447,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304908F0208F4A900044D105 /* YCSideTableHeader.m in Sources */,
 				30859A39207F5C700052F884 /* YCSingleton.m in Sources */,
+				304908E1208F053B0044D105 /* YCMainViewController.m in Sources */,
+				304908E6208F42A50044D105 /* YCSideListModel.m in Sources */,
 				30859A18207F3D770052F884 /* ViewController.m in Sources */,
+				304908D4208EFC330044D105 /* BaseViewController.m in Sources */,
 				30F27034207F61F7007394EB /* YCIntroModel.m in Sources */,
 				308B920D207F9F3200BA2861 /* Reachability.m in Sources */,
 				30859A23207F3D770052F884 /* main.m in Sources */,
+				308B92662080AED800BA2861 /* YCIntroViewController.m in Sources */,
+				304908DD208F04530044D105 /* LeftSlideTableViewController.m in Sources */,
+				304908D7208EFC9D0044D105 /* NavigationViewController.m in Sources */,
+				304908EB208F4A0D0044D105 /* YCButtonView.m in Sources */,
+				308B92612080996400BA2861 /* YCIntroCollectionViewCell.m in Sources */,
+				304908F6208F4BD40044D105 /* YCGradientView.m in Sources */,
 				30F27040207F65AE007394EB /* NSString+YCString.m in Sources */,
 				30859A15207F3D760052F884 /* AppDelegate.m in Sources */,
 			);
@@ -443,12 +598,22 @@
 			baseConfigurationReference = 709ABF474A7274D3B89871D2 /* Pods-YogaChromium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"$(PROJECT_DIR)/YogaChromium",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/YCSupportFiles/YogaChromium.pch";
 				INFOPLIST_FILE = YogaChromium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YogaChromium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -458,12 +623,22 @@
 			baseConfigurationReference = A5243A66FEB53CA703F2F6C6 /* Pods-YogaChromium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"$(PROJECT_DIR)/YogaChromium",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/YCSupportFiles/YogaChromium.pch";
 				INFOPLIST_FILE = YogaChromium/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YogaChromium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
