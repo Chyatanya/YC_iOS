@@ -10,5 +10,6 @@
 
 @interface YCGradientView : UIView
 -(void)applyGradientEffectWithColor:(UIColor *)color viewFrame:(CGRect)frame bottomColor:(UIColor *)bottomColor;
+-(void)applyHorizantalGradientEffectWithColor:(UIColor *)color viewFrame:(CGRect)frame bottomColor:(UIColor *)bottomColor;
 
 @end

@@ -31,7 +31,15 @@
     gradientLayer.endPoint = CGPointMake(1.0, 0.5);
     [self.layer insertSublayer:gradientLayer atIndex:0];
 }
-
+-(void)applyHorizantalGradientEffectWithColor:(UIColor *)color viewFrame:(CGRect)frame bottomColor:(UIColor *)bottomColor {
+    [self removePreviousLayers];
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = frame;
+    NSArray *colors =  [NSArray arrayWithObjects:(id)color.CGColor, bottomColor.CGColor, nil];
+    gradientLayer.colors = colors;
+    gradientLayer.locations = @[@0.0, @1.0];
+    [self.layer insertSublayer:gradientLayer atIndex:0];
+}
 -(void)removePreviousLayers {
     CAGradientLayer *layerToRemove;
     for (CALayer *aLayer in self.layer.sublayers) {

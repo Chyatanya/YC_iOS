@@ -11,6 +11,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/UIView+WebCache.h>
 #import "NSString+YCString.h"
+#import "UIView+YCView.h"
+#import "UIColor+YCColor.h"
 #import "YCSingleton.h"
 #import <LGSideMenuController/LGSideMenuController.h>
 #import <LGSideMenuController/UIViewController+LGSideMenuController.h>

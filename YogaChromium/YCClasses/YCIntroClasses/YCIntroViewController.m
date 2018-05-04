@@ -10,6 +10,8 @@
 #import "YCIntroModel.h"
 #import "YCIntroCollectionViewCell.h"
 #import "BaseViewController.h"
+#import "YCDetailViewController.h"
+
 #define Default_Section 0
 @interface YCIntroViewController ()
 
@@ -24,6 +26,9 @@
     [self getIntroData];
     // Do any additional setup after loading the view.
 }
+-(void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 -(void)setupInitialValues {
     self.arrayIntroduction = [[NSMutableArray alloc]initWithCapacity:0];
     [self.introCollectionView registerClass:[YCIntroCollectionViewCell class] forCellWithReuseIdentifier:@"YCIntroCollectionViewCell"];
@@ -37,8 +42,10 @@
     [self.buttonNext.labelTitle setTextColor:COLOR_THEME];
     self.buttonMoreInfo.buttonClickTaskCompletion = ^(UIButton *button) {
       // Navigate to more info view
-        NSLog(@"More Info Clicked");
+        NSArray *visibleItems = [weakSelf.introCollectionView indexPathsForVisibleItems];
+        NSIndexPath *currentItem = [visibleItems objectAtIndex:0];
 
+        [weakSelf navigateToDetailController:currentItem.item];
     };
     self.buttonNext.buttonClickTaskCompletion = ^(UIButton *button) {
         // load next item
@@ -57,6 +64,22 @@
         }
         
     };
+}
+-(void)navigateToDetailController:(NSInteger)index {
+    YCIntroModel * model = [self.arrayIntroduction objectAtIndex:index];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"YCScreensStoryboard" bundle:nil];
+    YCDetailViewController *detailVC = [storyboard instantiateViewControllerWithIdentifier:@"YCDetailVC"];
+    detailVC.urlStringPath = model.data_path;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController.navigationBar setBarTintColor:COLOR_THEME];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:COLOR_WHITE}];
+    [self.navigationController.navigationBar setTintColor:COLOR_WHITE];
+    self.navigationController.navigationBar.topItem.backBarButtonItem = [[UIBarButtonItem alloc]
+                                                                                  initWithTitle:model.heading style:UIBarButtonItemStylePlain target:nil action:nil];
+
+    [self.navigationController pushViewController:detailVC animated:YES];
+//    [self presentViewController:detailVC animated:YES completion:nil];
 }
 -(void)navigateToMainController {
     [[YCSingleton sharedInstance] removeFireBaseObservers];
@@ -78,6 +101,7 @@
 -(void)getIntroData {
     YCIntroViewController* __weak weakSelf = self;
     if (![[YCSingleton sharedInstance] isInternetConnectionAvailable]) {
+        NSLog(@"Connection issue");
         return;
     }
     [[YCSingleton sharedInstance] getDataFromChild:intro_path withObserver:FIRDataEventTypeValue completionBlock:^(NSDictionary *responseObject) {
@@ -104,6 +128,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark Collection View
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -117,6 +142,8 @@
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    YCIntroCollectionViewCell* cellReuse = (YCIntroCollectionViewCell*)cell;
+    [cellReuse.videoView stopVideo];
     [self setNextTitle];
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {

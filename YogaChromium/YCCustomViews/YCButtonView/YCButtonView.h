@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UIButton *buttonAction;
 - (IBAction)clickedOnButton:(UIButton *)sender;
+-(void)setRoundedViewCorner:(CGFloat)radious borderWith:(CGFloat)width borderColor:(UIColor*)color;
 // YCbutton
 @property(readwrite, nonatomic, copy) YCButtonViewTargetCompletionHandler buttonClickTaskCompletion;
 @end

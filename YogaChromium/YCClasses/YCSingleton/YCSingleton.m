@@ -8,6 +8,7 @@
 
 #import "YCSingleton.h"
 #import "Reachability.h"
+#import <stdlib.h>
 
 @implementation YCSingleton
 + (id)sharedInstance
@@ -25,7 +26,9 @@
     self.fireDatabaseRef = [[FIRDatabase database] referenceWithPath:parent];
     return self;
 }
-
+-(NSInteger)getRandomValueFrom:(NSInteger)maxNumber {
+    return arc4random_uniform(maxNumber);
+}
 -(void)getDataFromChild:(NSString *)childName withObserver:(FIRDataEventType)eventType completionBlock:(void(^)(NSDictionary *responseObject))success failure:(void(^)(NSError *error))failure
 {
     [[self.fireDatabaseRef child:childName] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot){

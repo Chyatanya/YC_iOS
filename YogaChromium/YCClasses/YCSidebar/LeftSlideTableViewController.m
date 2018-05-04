@@ -9,6 +9,10 @@
 #import "LeftSlideTableViewController.h"
 #import "YCSideListModel.h"
 #import "YCSideTableHeader.h"
+#import "YCDetailViewController.h"
+#import "BaseViewController.h"
+#import "YCMainViewController.h"
+
 @interface LeftSlideTableViewController ()
 
 @end
@@ -92,6 +96,20 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 100;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BaseViewController *baseViewController = (BaseViewController *)self.sideMenuController;
+    YCSideListModel * model = (YCSideListModel *)[arraySideList objectAtIndex:indexPath.row];
+    YCDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"YCDetailVC"];
+    detailVC.urlStringPath = model.dataPath;
+    UINavigationController *navigationController = (UINavigationController *)baseViewController.rootViewController;
+    YCMainViewController * navController =(YCMainViewController *)[navigationController.childViewControllers objectAtIndex:0];
+    navController.navigationController.navigationBar.topItem.backBarButtonItem = [[UIBarButtonItem alloc]
+                                                                         initWithTitle:model.title style:UIBarButtonItemStylePlain target:nil action:nil];
+
+    [navigationController pushViewController:detailVC animated:YES];
+    [baseViewController hideLeftViewAnimated:YES completionHandler:nil];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -126,7 +144,7 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -134,6 +152,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

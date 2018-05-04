@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30116505209333E60051A9EF /* YCMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30116503209333E60051A9EF /* YCMainCollectionViewCell.m */; };
+		30116506209333E60051A9EF /* YCMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30116504209333E60051A9EF /* YCMainCollectionViewCell.xib */; };
+		30116509209343A50051A9EF /* YCMainSlidingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30116508209343A50051A9EF /* YCMainSlidingListModel.m */; };
+		303A4B452097261C00685BAB /* UIView+YCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B442097261C00685BAB /* UIView+YCView.m */; };
+		303A4B48209875B900685BAB /* YCMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B47209875B900685BAB /* YCMainDataModel.m */; };
+		303A4B4B2098774000685BAB /* YCMainDataListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B4A2098774000685BAB /* YCMainDataListModel.m */; };
+		303A4B4E2098791F00685BAB /* YCMainDataListContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B4D2098791F00685BAB /* YCMainDataListContentModel.m */; };
+		303A4B512098797F00685BAB /* YCVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B502098797F00685BAB /* YCVideoModel.m */; };
+		303A4B542099CFA900685BAB /* YCDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B532099CFA900685BAB /* YCDetailModel.m */; };
+		303A4B572099D1A800685BAB /* UIColor+YCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B562099D1A800685BAB /* UIColor+YCColor.m */; };
+		303A4B5A209AE59300685BAB /* YCDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B59209AE59300685BAB /* YCDetailTableViewCell.m */; };
+		303A4B5C209B0F3A00685BAB /* YCDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 303A4B5B209B0F3A00685BAB /* YCDetailTableViewCell.xib */; };
+		303A4B5F209B408C00685BAB /* YCMainDataContentmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A4B5E209B408C00685BAB /* YCMainDataContentmodel.m */; };
 		304908D0208EFB3C0044D105 /* YCScreensStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304908CF208EFB3C0044D105 /* YCScreensStoryboard.storyboard */; };
 		304908D4208EFC330044D105 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908D3208EFC330044D105 /* BaseViewController.m */; };
 		304908D7208EFC9D0044D105 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304908D6208EFC9D0044D105 /* NavigationViewController.m */; };
@@ -33,11 +46,36 @@
 		308B92662080AED800BA2861 /* YCIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B92652080AED800BA2861 /* YCIntroViewController.m */; };
 		30F27034207F61F7007394EB /* YCIntroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F27033207F61F7007394EB /* YCIntroModel.m */; };
 		30F27040207F65AE007394EB /* NSString+YCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F2703F207F65AE007394EB /* NSString+YCString.m */; };
+		30F3FA9820907D4E0094886C /* YCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3FA9720907D4E0094886C /* YCDetailViewController.m */; };
 		8ACAD603FEB4B92070C66EC9 /* Pods_YogaChromium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5A2AB1B2FAD0AE5ECB87B5 /* Pods_YogaChromium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F5A2AB1B2FAD0AE5ECB87B5 /* Pods_YogaChromium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaChromium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30116502209333E60051A9EF /* YCMainCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainCollectionViewCell.h; sourceTree = "<group>"; };
+		30116503209333E60051A9EF /* YCMainCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainCollectionViewCell.m; sourceTree = "<group>"; };
+		30116504209333E60051A9EF /* YCMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		30116507209343A50051A9EF /* YCMainSlidingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainSlidingListModel.h; sourceTree = "<group>"; };
+		30116508209343A50051A9EF /* YCMainSlidingListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainSlidingListModel.m; sourceTree = "<group>"; };
+		303A4B432097261C00685BAB /* UIView+YCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YCView.h"; sourceTree = "<group>"; };
+		303A4B442097261C00685BAB /* UIView+YCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCView.m"; sourceTree = "<group>"; };
+		303A4B46209875B900685BAB /* YCMainDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainDataModel.h; sourceTree = "<group>"; };
+		303A4B47209875B900685BAB /* YCMainDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainDataModel.m; sourceTree = "<group>"; };
+		303A4B492098774000685BAB /* YCMainDataListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainDataListModel.h; sourceTree = "<group>"; };
+		303A4B4A2098774000685BAB /* YCMainDataListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainDataListModel.m; sourceTree = "<group>"; };
+		303A4B4C2098791F00685BAB /* YCMainDataListContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainDataListContentModel.h; sourceTree = "<group>"; };
+		303A4B4D2098791F00685BAB /* YCMainDataListContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainDataListContentModel.m; sourceTree = "<group>"; };
+		303A4B4F2098797F00685BAB /* YCVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCVideoModel.h; sourceTree = "<group>"; };
+		303A4B502098797F00685BAB /* YCVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCVideoModel.m; sourceTree = "<group>"; };
+		303A4B522099CFA900685BAB /* YCDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDetailModel.h; sourceTree = "<group>"; };
+		303A4B532099CFA900685BAB /* YCDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDetailModel.m; sourceTree = "<group>"; };
+		303A4B552099D1A800685BAB /* UIColor+YCColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YCColor.h"; sourceTree = "<group>"; };
+		303A4B562099D1A800685BAB /* UIColor+YCColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YCColor.m"; sourceTree = "<group>"; };
+		303A4B58209AE59300685BAB /* YCDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDetailTableViewCell.h; sourceTree = "<group>"; };
+		303A4B59209AE59300685BAB /* YCDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDetailTableViewCell.m; sourceTree = "<group>"; };
+		303A4B5B209B0F3A00685BAB /* YCDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCDetailTableViewCell.xib; sourceTree = "<group>"; };
+		303A4B5D209B408C00685BAB /* YCMainDataContentmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMainDataContentmodel.h; sourceTree = "<group>"; };
+		303A4B5E209B408C00685BAB /* YCMainDataContentmodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMainDataContentmodel.m; sourceTree = "<group>"; };
 		304908CF208EFB3C0044D105 /* YCScreensStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YCScreensStoryboard.storyboard; sourceTree = "<group>"; };
 		304908D2208EFC330044D105 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		304908D3208EFC330044D105 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -83,6 +121,8 @@
 		30F27033207F61F7007394EB /* YCIntroModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCIntroModel.m; sourceTree = "<group>"; };
 		30F2703E207F65AE007394EB /* NSString+YCString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YCString.h"; sourceTree = "<group>"; };
 		30F2703F207F65AE007394EB /* NSString+YCString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YCString.m"; sourceTree = "<group>"; };
+		30F3FA9620907D4E0094886C /* YCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDetailViewController.h; sourceTree = "<group>"; };
+		30F3FA9720907D4E0094886C /* YCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDetailViewController.m; sourceTree = "<group>"; };
 		709ABF474A7274D3B89871D2 /* Pods-YogaChromium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaChromium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YogaChromium/Pods-YogaChromium.debug.xcconfig"; sourceTree = "<group>"; };
 		A5243A66FEB53CA703F2F6C6 /* Pods-YogaChromium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaChromium.release.xcconfig"; path = "Pods/Target Support Files/Pods-YogaChromium/Pods-YogaChromium.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +262,10 @@
 			children = (
 				30F2703E207F65AE007394EB /* NSString+YCString.h */,
 				30F2703F207F65AE007394EB /* NSString+YCString.m */,
+				303A4B432097261C00685BAB /* UIView+YCView.h */,
+				303A4B442097261C00685BAB /* UIView+YCView.m */,
+				303A4B552099D1A800685BAB /* UIColor+YCColor.h */,
+				303A4B562099D1A800685BAB /* UIColor+YCColor.m */,
 			);
 			path = YCCategories;
 			sourceTree = "<group>";
@@ -238,6 +282,7 @@
 		30859A31207F413D0052F884 /* YCClasses */ = {
 			isa = PBXGroup;
 			children = (
+				30F3FA9520907C520094886C /* YCDetail */,
 				304908DE208F05250044D105 /* YCMain */,
 				304908D1208EFB730044D105 /* YCSidebar */,
 				308B92632080AEBE00BA2861 /* YCIntroClasses */,
@@ -272,6 +317,12 @@
 				308B925E2080996400BA2861 /* YCIntroCollectionViewCell.h */,
 				308B925F2080996400BA2861 /* YCIntroCollectionViewCell.m */,
 				308B92602080996400BA2861 /* YCIntroCollectionViewCell.xib */,
+				30116502209333E60051A9EF /* YCMainCollectionViewCell.h */,
+				30116503209333E60051A9EF /* YCMainCollectionViewCell.m */,
+				30116504209333E60051A9EF /* YCMainCollectionViewCell.xib */,
+				303A4B58209AE59300685BAB /* YCDetailTableViewCell.h */,
+				303A4B59209AE59300685BAB /* YCDetailTableViewCell.m */,
+				303A4B5B209B0F3A00685BAB /* YCDetailTableViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -292,8 +343,31 @@
 				30F27033207F61F7007394EB /* YCIntroModel.m */,
 				304908E4208F42A50044D105 /* YCSideListModel.h */,
 				304908E5208F42A50044D105 /* YCSideListModel.m */,
+				30116507209343A50051A9EF /* YCMainSlidingListModel.h */,
+				30116508209343A50051A9EF /* YCMainSlidingListModel.m */,
+				303A4B46209875B900685BAB /* YCMainDataModel.h */,
+				303A4B47209875B900685BAB /* YCMainDataModel.m */,
+				303A4B492098774000685BAB /* YCMainDataListModel.h */,
+				303A4B4A2098774000685BAB /* YCMainDataListModel.m */,
+				303A4B5D209B408C00685BAB /* YCMainDataContentmodel.h */,
+				303A4B5E209B408C00685BAB /* YCMainDataContentmodel.m */,
+				303A4B4C2098791F00685BAB /* YCMainDataListContentModel.h */,
+				303A4B4D2098791F00685BAB /* YCMainDataListContentModel.m */,
+				303A4B4F2098797F00685BAB /* YCVideoModel.h */,
+				303A4B502098797F00685BAB /* YCVideoModel.m */,
+				303A4B522099CFA900685BAB /* YCDetailModel.h */,
+				303A4B532099CFA900685BAB /* YCDetailModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		30F3FA9520907C520094886C /* YCDetail */ = {
+			isa = PBXGroup;
+			children = (
+				30F3FA9620907D4E0094886C /* YCDetailViewController.h */,
+				30F3FA9720907D4E0094886C /* YCDetailViewController.m */,
+			);
+			path = YCDetail;
 			sourceTree = "<group>";
 		};
 		31E4B3341D839870301D36C1 /* Pods */ = {
@@ -373,7 +447,9 @@
 				304908EC208F4A0D0044D105 /* YCButtonView.xib in Resources */,
 				308B92622080996400BA2861 /* YCIntroCollectionViewCell.xib in Resources */,
 				304908D0208EFB3C0044D105 /* YCScreensStoryboard.storyboard in Resources */,
+				30116506209333E60051A9EF /* YCMainCollectionViewCell.xib in Resources */,
 				304908F2208F4A9F0044D105 /* YCSideTableHeader.xib in Resources */,
+				303A4B5C209B0F3A00685BAB /* YCDetailTableViewCell.xib in Resources */,
 				30859A1B207F3D770052F884 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +487,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -419,6 +496,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -447,20 +525,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303A4B5F209B408C00685BAB /* YCMainDataContentmodel.m in Sources */,
 				304908F0208F4A900044D105 /* YCSideTableHeader.m in Sources */,
+				303A4B512098797F00685BAB /* YCVideoModel.m in Sources */,
 				30859A39207F5C700052F884 /* YCSingleton.m in Sources */,
+				303A4B4E2098791F00685BAB /* YCMainDataListContentModel.m in Sources */,
+				303A4B5A209AE59300685BAB /* YCDetailTableViewCell.m in Sources */,
+				303A4B48209875B900685BAB /* YCMainDataModel.m in Sources */,
 				304908E1208F053B0044D105 /* YCMainViewController.m in Sources */,
 				304908E6208F42A50044D105 /* YCSideListModel.m in Sources */,
+				303A4B4B2098774000685BAB /* YCMainDataListModel.m in Sources */,
 				30859A18207F3D770052F884 /* ViewController.m in Sources */,
 				304908D4208EFC330044D105 /* BaseViewController.m in Sources */,
+				303A4B542099CFA900685BAB /* YCDetailModel.m in Sources */,
+				303A4B452097261C00685BAB /* UIView+YCView.m in Sources */,
 				30F27034207F61F7007394EB /* YCIntroModel.m in Sources */,
+				30116509209343A50051A9EF /* YCMainSlidingListModel.m in Sources */,
+				30F3FA9820907D4E0094886C /* YCDetailViewController.m in Sources */,
 				308B920D207F9F3200BA2861 /* Reachability.m in Sources */,
 				30859A23207F3D770052F884 /* main.m in Sources */,
 				308B92662080AED800BA2861 /* YCIntroViewController.m in Sources */,
 				304908DD208F04530044D105 /* LeftSlideTableViewController.m in Sources */,
 				304908D7208EFC9D0044D105 /* NavigationViewController.m in Sources */,
 				304908EB208F4A0D0044D105 /* YCButtonView.m in Sources */,
+				30116505209333E60051A9EF /* YCMainCollectionViewCell.m in Sources */,
 				308B92612080996400BA2861 /* YCIntroCollectionViewCell.m in Sources */,
+				303A4B572099D1A800685BAB /* UIColor+YCColor.m in Sources */,
 				304908F6208F4BD40044D105 /* YCGradientView.m in Sources */,
 				30F27040207F65AE007394EB /* NSString+YCString.m in Sources */,
 				30859A15207F3D760052F884 /* AppDelegate.m in Sources */,

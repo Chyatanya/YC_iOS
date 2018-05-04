@@ -11,11 +11,11 @@
 @interface YCIntroModel : NSObject{
     
 }
-@property(nonatomic, strong) NSString * contentString;
-@property(nonatomic, strong) NSString * dataPathString;
-@property(nonatomic, strong) NSString * headingString;
-@property(nonatomic, strong) NSString * typeString;
-@property(nonatomic, strong) NSString * urlString;
+@property(nonatomic, strong) NSString * content;
+@property(nonatomic, strong) NSString * data_path;
+@property(nonatomic, strong) NSString * heading;
+@property(nonatomic, strong) NSString * type;
+@property(nonatomic, strong) NSString * url;
 -(instancetype)initWithIntroData:(NSDictionary *)introData;
 -(instancetype)init;
 @end

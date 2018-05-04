@@ -48,4 +48,7 @@
         self.buttonClickTaskCompletion(sender);
     }
 }
+-(void)setRoundedViewCorner:(CGFloat)radious borderWith:(CGFloat)width borderColor:(UIColor*)color {
+    [self setRoundedCorner:radious borderWith:width borderColor:color];
+}
 @end

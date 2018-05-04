@@ -10,20 +10,20 @@
 
 @implementation YCIntroModel
 -(instancetype)init{
-    self.contentString = @"";
-    self.dataPathString = @"";
-    self.headingString = @"";
-    self.typeString = @"";
-    self.urlString = @"";
+    self.content = @"";
+    self.data_path = @"";
+    self.heading = @"";
+    self.type = @"";
+    self.url = @"";
     return self;
 }
 -(instancetype)initWithIntroData:(NSDictionary *)introData{
     if ([introData isKindOfClass:[NSDictionary class]]) {
-        self.contentString = [NSString getStringWithoutNull:[introData valueForKey:@"content"]];
-        self.dataPathString = [NSString getStringWithoutNull:[introData valueForKey:@"data_path"]];
-        self.headingString = [NSString getStringWithoutNull:[introData valueForKey:@"heading"]];
-        self.typeString = [NSString getStringWithoutNull:[introData valueForKey:@"type"]];
-        self.urlString = [NSString getStringWithoutNull:[introData valueForKey:@"url"]];
+        self.content = [NSString getStringWithoutNull:[introData valueForKey:@"content"]];
+        self.data_path = [[NSString getStringWithoutNull:[introData valueForKey:@"data_path"]] stringByReplacingOccurrencesOfString:@"screens/" withString:@""];
+        self.heading = [NSString getStringWithoutNull:[introData valueForKey:@"heading"]];
+        self.type = [NSString getStringWithoutNull:[introData valueForKey:@"type"]];
+        self.url = [NSString getStringWithoutNull:[introData valueForKey:@"url"]];
     }
     return self;
 }

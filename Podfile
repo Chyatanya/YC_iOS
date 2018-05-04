@@ -8,4 +8,5 @@ target 'YogaChromium' do
   pod 'Firebase/Database'
   pod 'SDWebImage'
   pod 'LGSideMenuController'
+  pod 'youtube-ios-player-helper'
 end

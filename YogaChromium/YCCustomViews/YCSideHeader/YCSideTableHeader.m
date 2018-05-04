@@ -26,11 +26,11 @@
     UIView *view;
     view = [[[NSBundle mainBundle] loadNibNamed:@"YCSideTableHeader" owner:self options:nil] objectAtIndex:0];
     view.frame = self.bounds;
-    NSLog(@"view.frame : %@ && self.Frame %@",view,self);
     view.backgroundColor = [UIColor clearColor];
     [self addSubview:view];
     [self.gradientView applyGradientEffectWithColor:COLOR_THEME viewFrame:view.frame bottomColor:COLOR_SPECIFIC];
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

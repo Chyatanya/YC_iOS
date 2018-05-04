@@ -17,4 +17,5 @@
 -(void)getDataFromChild:(NSString *)childName withObserver:(FIRDataEventType)eventType completionBlock:(void(^)(NSDictionary *responseObject))success failure:(void(^)(NSError *error))failure;
 -(void)removeFireBaseObservers;
 - (BOOL)isInternetConnectionAvailable;
+-(NSInteger)getRandomValueFrom:(NSInteger)maxNumber;
 @end

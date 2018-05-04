@@ -14,10 +14,10 @@
     self.title = @"";
     return self;
 }
--(instancetype)initWithSideListData:(NSDictionary *)introData{
-    if ([introData isKindOfClass:[NSDictionary class]]) {
-        self.dataPath = [[NSString getStringWithoutNull:[introData valueForKey:@"data_path"]] stringByReplacingOccurrencesOfString:@"screens/" withString:@""];
-        self.title = [NSString getStringWithoutNull:[introData valueForKey:@"title"]];
+-(instancetype)initWithSideListData:(NSDictionary *)sideListData{
+    if ([sideListData isKindOfClass:[NSDictionary class]]) {
+        self.dataPath = [[NSString getStringWithoutNull:[sideListData valueForKey:@"data_path"]] stringByReplacingOccurrencesOfString:@"screens/" withString:@""];
+        self.title = [NSString getStringWithoutNull:[sideListData valueForKey:@"title"]];
     }
     return self;
 }
